@@ -15,8 +15,8 @@ jobs:
 
       - name: Extract Android project
         run: |
-          unzip -q JBFramelabs_GitHub_APK_Builder.zip
-          cd JBFramelabs_GitHub_APK_Builder
+          unzip -q JBFramelabs_Android_Source.zip
+          cd cd JBFramelabs_Android_Source
           echo "PROJECT_DIR=$PWD" >> $GITHUB_ENV
 
       - name: Set up Java
@@ -34,5 +34,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: JBFramelabs-Magnet-Maker-APK
-          path: JBFramelabs_GitHub_APK_Builder/app/build/outputs/apk/debug/app-debug.apk
+          path: path: JBFramelabs_Android_Source/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
